@@ -11,8 +11,9 @@ public class Main {
 
     double creditCardBalance = 5000;
     double interest = creditCardBalance * 0.17;
-    double newCreditBalance = creditCardBalance + interest;
+    double firstMonthInterest = creditCardBalance + interest;
+    double secondMonthInterest = firstMonthInterest * 0.17 + firstMonthInterest;
 
-    
+        System.out.println("The initial credit card balance is " + creditCardBalance + " and the interest rate is 17%. The interest due after one month is $" + firstMonthInterest + " and the interest due after two months is $" + secondMonthInterest );
     }
 }
